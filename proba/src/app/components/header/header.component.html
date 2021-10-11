@@ -1,0 +1,17 @@
+<div class="row text-center mt-5 align-items-center text-center">
+  <div class="col-2"><img src="../../../assets/image.png" alt="" width="50px"></div>
+  <div class="col-8" id="title" routerLinkActive="active" routerLink="/">CRYPTONIUM</div>
+  <div class="col-2"></div>
+</div>
+<div class="row text-center mt-5 align-items-center">
+  <!-- <div class="col-2"><img src="../../../assets/image.png" alt="" width="50px"></div> -->
+  <div class="col-2"><a routerLinkActive="active" routerLink="/">Home</a></div>
+  <div class="col-1">
+    <div *ngIf="loggedIn"><a routerLinkActive="active" routerLink="/favorites">Favorites</a></div>
+  </div>
+  <div class="col-7"></div>
+  <div class="col-2  text-center">
+    <!-- <button *ngIf="!loggedIn" class="btn btn-primary" (click)="loginFromParent()">Login</button> -->
+    <button *ngIf="!loggedIn" class="btn btn-primary" (click)="login()">Login</button>
+  </div>
+</div>

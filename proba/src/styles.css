@@ -1,0 +1,50 @@
+/* You can add global styles to this file, and also import other style files */
+/* div{
+  background-color:transparent
+
+} */
+/* #particles-js{
+  background-color:red
+} */
+a{
+  color:#03A062;
+}
+a:hover{
+  color:#052c1c;
+  text-decoration:none;
+}
+div{
+  color:gray;
+  /* border: white 1px solid; */
+}
+
+.btn{
+  border-radius:0;
+}
+
+.btn-primary{
+  background-color:#03A062;
+  border: #03A062;
+}
+.btn-primary:hover{
+  background-color:#052c1c;
+  border: #03A062;
+}
+
+.btn-secondary{
+  background-color:#052c1c;
+  border: #052c1c;
+}
+.btn-secondary:hover{
+  background-color:#03A062;
+  border: #03A062;
+}
+
+#title{
+  font-size: 100px;
+  color:#03A062;
+}
+
+#title:hover{
+  cursor: pointer;
+}

@@ -1,0 +1,24 @@
+<div class="row mt-2 mb-2">
+  <div class="col-3">Symbol</div>
+  <div class="col-3">Last</div>
+  <div class="col-3">High</div>
+  <div class="col-3">Low</div>
+</div>
+<!-- <div *ngIf="detailsData!=undefined && detailsData.other!=undefined"> -->
+  <div class="row">
+    <div class="col-3">{{detailsData?.currency.substring(1)}} </div>
+    <div class="col-3">{{detailsData?.other?.LAST_PRICE}} </div>
+    <div class="col-3">{{detailsData?.other?.HIGH}} </div>
+    <div class="col-3">{{detailsData?.other?.LOW}} </div>
+  </div>
+<!-- </div> -->
+<div *ngIf="loggedIn">
+<div class="row mt-2 mb-2" *ngIf="!favorite">
+  <div class="col-3"><button class="btn btn-primary" (click)="addToFavorites()">Add to favorites</button></div>
+</div>
+<div class="row mt-2 mb-2" *ngIf="favorite">
+  <div class="col-3"><button class="btn btn-secondary" (click)="removeFromFavorites()">Remove from favorites</button></div>
+</div>
+</div>
+
+

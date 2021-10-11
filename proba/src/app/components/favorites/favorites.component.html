@@ -1,0 +1,11 @@
+<div class="row mt-2 mb-2">
+  <div class="col-2">Symbol</div>
+  <div class="col-3">Last</div>
+  <div class="col-3">High</div>
+  <div class="col-3">Low</div>
+</div>
+
+<div>
+  <app-entry *ngFor="let favorite of favorites | keyvalue " [data]="favorite.value" ></app-entry>
+</div>
+

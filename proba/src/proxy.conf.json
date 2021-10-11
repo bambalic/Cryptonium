@@ -1,0 +1,7 @@
+{
+  "/v1/*": {
+    "target": "https://api.bitfinex.com",
+    "secure": true,
+    "changeOrigin": true
+  }
+}

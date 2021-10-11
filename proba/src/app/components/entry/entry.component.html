@@ -1,0 +1,17 @@
+<div *ngIf="data!==undefined && data.currency!==undefined && data.other!==undefined">
+  <div class="row text-center" *ngIf="!favoritePage">
+    <div class="col-2"><a routerLinkActive="active" routerLink="/details/{{data.currency}}" (click)="sendDetailsData()">{{removeLeadingChar(data.currency)}}</a> </div>
+    <div class="col-2">{{data.other.LAST_PRICE}} </div>
+    <div class="col-2">{{data.other.DAILY_CHANGE}} </div>
+    <div class="col-2">{{data.other.DAILY_CHANGE_RELATIVE}} </div>
+    <div class="col-2">{{data.other.HIGH}} </div>
+    <div class="col-2">{{data.other.LOW}} </div>
+  </div>
+
+  <div class="row" *ngIf="favoritePage">
+    <div class="col-2"><a routerLinkActive="active" routerLink="/details/{{data.currency}}" (click)="sendDetailsData()">{{removeLeadingChar(data.currency)}}</a> </div>
+    <div class="col-3">{{data.other.LAST_PRICE}} </div>
+    <div class="col-3">{{data.other.HIGH}} </div>
+    <div class="col-3">{{data.other.LOW}} </div>
+  </div>
+</div>
